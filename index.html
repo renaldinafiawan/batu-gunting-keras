@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hompimpa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
      <!-- Your content here -->
-    
-<h2>Permainan Batu Kertas Gunting</h2>
-    <p> Silahkan Pilih</p>
-     <div class="container">
-        <button id="batu">batu</button>
-        <button id="kertas">kertas</button>
-        <button id="gunting">gunting</button>
-     </div>
-     <div>
-     Pemenangnya adalah : <span id="result"></span> </div>
+<header class ="header">   
+<h1>Permainan Sederhana: Hompimpa</h1>
+
+</header> 
+
+<div class="main">
+ <div class="scoreboard">
+    <h2 class="scoreinfo" id="scoreInfo">Choose your weapon</h2>
+    <h3 class="score-message" id="scoreMessage">Capai nilai 5 untuk memenangkan hompimpa</h3>
+ <div class="scores-container">
+    <div class="score-box">
+        <div class="sign" id="playerSign">?</div>
+        <p class="score" id="playerScore">Player: 0</p>
+    </div>
+    <div class="score-box">
+        <div class="sign" id="computerSign">?</div>
+        <p class="score" id="computerScore">Computer: 0</p>
+    </div>
+ </div>   
+</div>
+<div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="sign">✊</div>
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="sign">✋</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="sign">✌</div>
+        </button>
+      </div>
+
+
+     </main>
     <script src="hompimpa.js">
         // Your JavaScript code here
         
